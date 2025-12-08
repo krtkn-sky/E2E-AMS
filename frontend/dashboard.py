@@ -95,7 +95,7 @@ if uploaded_file:
             preds.append(None)
 
         # update progress
-        progress.update((i + 1) / len(records))
+        progress.progress((i + 1) / len(records))
         status_text.text(f"Processed {i + 1}/{len(records)} rows")
         # small sleep to keep UI responsive for large files (tiny)
         # sleep(0.001)
